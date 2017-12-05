@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Information</title>
+<style type="text/css" >
+#add_stud
+{
+	
+	clear:none;
+
+}
+#add_stud.label
+{
+	text-align:right;
+	clear:none;
+}
+label{
+display:inline-block;
+text-align:right;
+width:140px;
+}
+</style>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">  
+   <link rel="stylesheet" href="/resources/demos/style.css"> 
+  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+    </head>
+<body>
+    <div align="center" id="add_stud">
+    <form><h1>STUDENT INFORMATION</h1><br/>
+	    <label>Student name:</label><input type="text" legth="24"><br/><br/>
+    <label>USN:</label><input type="text" length="10"><br/><br/>
+<label>Course:</label><select>
+<option>Select Course</option>
+    <option>MCA</option>
+    <option>MTech</option>
+    <option>B.E</option>
+</select><br/>
+<label>Semester:</label><select>
+<option>Select sem</option>
+    <option>1<sup>st</sup></option>
+    <option>2<sup>nd</sup></option>
+    <option>3<sup>rd</sup></option>
+    <option>4<sup>th</sup></option>
+    <option>5<sup>th</sup></option>
+    <option>6<sup>th</sup></option>
+    <option>7<sup>th</sup></option>
+    <option>8<sup>th</sup></option>
+</select><br/><br/>
+<label>DOB:</label><input type="text" id="datepicker"><br/><br/>
+<label>Gender:</label><input type="radio"name="Gender" value="1">Male
+<input type="radio" name="Gender" value="2">Female<br/><br/>
+<label>Father's Name:</label><input type="text" length="24"><br/><br/>
+<label>Mother's Name:</label><input type="text" length="24"><br/><br/>
+<label>Address:</label><textarea id="address"></textarea><br/><br/>
+<label>Other Interests:</label><input type="checkbox" name="Interest's" value="1">Sports
+<input type="checkbox" name="Interest's" value="2">Dance
+<input type="checkbox" name="Interest's" value="3">Music
+<input type="checkbox" name="Interest's" value="4">Acting<br/><br/>
+<input type="submit" value="Submit"  onclick="validate()">
+</form>
+    </div>
+</body>
+</html>
